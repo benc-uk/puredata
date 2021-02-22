@@ -1,0 +1,24 @@
+#N canvas 378 304 299 310 10;
+#X obj 69 92 notein;
+#X obj 16 271 outlet;
+#X obj 140 208 outlet;
+#X obj 16 247 mtof;
+#X obj 140 143 / 127;
+#X obj 16 144 stripnote;
+#X obj 16 224 line;
+#X obj 16 200 pack 1 0;
+#X obj 16 8 inlet;
+#X obj 19 59 hsl 128 15 0 200 0 0 \$0_porta empty Portomento 55 -8
+0 10 -232576 -1 -1 401 1;
+#X obj 61 177 r \$0_porta;
+#X connect 0 0 5 0;
+#X connect 0 1 4 0;
+#X connect 0 1 5 1;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 7 0;
+#X connect 6 0 3 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 10 0 7 1;
+#X coords 0 -1 1 1 150 50 1 10 30;

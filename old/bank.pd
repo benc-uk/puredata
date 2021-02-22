@@ -1,0 +1,30 @@
+#N canvas 347 423 1064 526 10;
+#X obj 254 272 qlist;
+#X obj 136 122 bng 24 250 50 0 empty empty Ld 7 12 0 10 -239390 -86277
+-86277;
+#X obj 254 158 t b b;
+#X obj 176 343 textfile;
+#X obj 104 122 bng 24 250 50 0 empty empty Sav 4 12 0 10 -175589 -13381
+-13381;
+#X msg 176 257 clear;
+#X obj 190 313 r bankout;
+#X obj 89 257 s savebank;
+#X msg 17 296 write \$1.txt;
+#X obj 17 257 symbol \$1;
+#X obj 106 207 t b b b;
+#X obj 281 195 symbol \$1;
+#X msg 281 228 read \$1.txt;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 1 11 0;
+#X connect 4 0 10 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 8 0 3 0;
+#X connect 9 0 8 0;
+#X connect 10 0 9 0;
+#X connect 10 1 7 0;
+#X connect 10 2 5 0;
+#X connect 11 0 12 0;
+#X connect 12 0 0 0;
+#X coords 0 -1 1 1 65 50 1 100 100;

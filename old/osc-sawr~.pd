@@ -1,0 +1,14 @@
+#N canvas 696 172 487 253 10;
+#X obj 62 81 phasor~;
+#X obj 63 25 inlet;
+#X obj 74 207 outlet~;
+#X obj 61 124 -~ 0.5;
+#X obj 69 164 *~ 2;
+#X obj 232 110 display;
+#X floatatom 155 34 5 0 0 0 - - -;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 4 0 5 0;
+#X connect 6 0 0 0;

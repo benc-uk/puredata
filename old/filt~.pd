@@ -1,0 +1,21 @@
+#N canvas 811 580 634 441 10;
+#X obj 89 282 outlet~;
+#X obj 52 112 inlet;
+#X obj 56 142 inlet;
+#X obj 108 203 sig~;
+#X obj 149 203 sig~;
+#X obj 89 250 moog~;
+#X obj 25 196 inlet~;
+#X obj 111 159 hsl 128 15 0 4 0 0 empty empty Q_/_Resonance -2 -8 0
+10 -204786 -1 -1 2102 1;
+#X obj 111 129 hsl 128 15 0 6000 0 0 empty empty Cutoff -2 -8 0 10
+-204786 -1 -1 1440 1;
+#X connect 1 0 8 0;
+#X connect 2 0 7 0;
+#X connect 3 0 5 1;
+#X connect 4 0 5 2;
+#X connect 5 0 0 0;
+#X connect 6 0 5 0;
+#X connect 7 0 4 0;
+#X connect 8 0 3 0;
+#X coords 0 -1 1 1 150 80 1 100 100;
